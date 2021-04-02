@@ -1,0 +1,33 @@
+article h1, article blockquote, article ul, article hr, article li, article table, article a {
+    width: 700px;
+    margin: 0 auto;
+}
+article h1,{ font-family: 'PT Sans ', sans-serif; font-weight: bold;
+}
+article h1 {
+position: absolute;
+width: 478px;
+height: 85px;
+left: 580px;
+top: 78px;
+font-family: PT Serif;
+font-style: normal;
+font-weight: bold;
+font-size: 55px;
+line-height: 73px;
+color: #3A6B70;
+ }
+
+ article blockquote {
+position: absolute;
+width: 642px;
+height: 125px;
+left: 746px;
+top: 228px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 23px;
+color: #3A6B70;
+  }
