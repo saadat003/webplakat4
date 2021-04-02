@@ -15,7 +15,7 @@
    $( ".elektr, .iqruski, .ukr, .koncel" ).draggable({ revert: true} );
    $( ".palatka, .yeda, .obuv, .qiq, .obed, .odejd, .odejd, .spalnik, .aptecka, .jaket, .voda, .jaket, .dojdevik, .fonar" ).draggable();
    $( ".sumk" ).droppable({
-     accept: ".elektr, .iqruski, .ukr, .koncel, .palatka, .yeda, .obuv, .qiq, .obed, .odejd, .odejd, .spalnik, .aptecka, .jaket, .voda, .jaket, .dojdevik, .fonar",
+     accept: ".palatka, .yeda, .obuv, .qiq, .obed, .odejd, .odejd, .spalnik, .aptecka, .jaket, .voda, .jaket, .dojdevik, .fonar",
      classes: {
        "ui-droppable-active": "ui-state-active",
        "ui-droppable-hover": "ui-state-hover"
@@ -33,7 +33,7 @@
    if ($(".sumk").hasClass("ui-state-highlight")) {
      alert ("УРА! Теперь можно отправиться в поход!");
    } else {
-     alert ("УПС! Будьте внимателнее! Поробуйте ещё раз.");
+     alert ("УПС! Будьте внимателнее! Попробуйте ещё раз.");
    }
  });
 
