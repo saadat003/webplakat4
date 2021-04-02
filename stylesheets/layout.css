@@ -33,15 +33,6 @@ body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; 
   color: white;
   transform: translateY(-7px);
 }
-
-.podsk {
-  position: absolute;
-width: 39px;
-height: 36px;
-left: 1346px;
-top: 807px;
-}
-
 .button3 {
   position: relative;
   top: 450px;
