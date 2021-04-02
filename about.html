@@ -12,7 +12,7 @@
     <script>
     $(document).ready(function(){
     $( function() {
-   $( ".elektr, .iqruski, .ukr, .koncel" ).draggable();
+   $( ".elektr, .iqruski, .ukr, .koncel" ).draggable({ revert: true} );
    $( ".palatka, .yeda, .obuv, .qiq, .obed, .odejd, .odejd, .spalnik, .aptecka, .jaket, .voda, .jaket, .dojdevik, .fonar" ).draggable();
    $( ".sumk" ).droppable({
      accept: ".elektr, .iqruski, .ukr, .koncel, .palatka, .yeda, .obuv, .qiq, .obed, .odejd, .odejd, .spalnik, .aptecka, .jaket, .voda, .jaket, .dojdevik, .fonar",
