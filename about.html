@@ -1,1 +1,113 @@
-<!doctype html><html lang=en manifest=webogram.appcache ng-csp xmlns:ng=http://angularjs.org id=ng-app style="display: none;"><head><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"><title>Telegram Web</title><link rel=stylesheet href=css/app.css><link rel=manifest href=manifest.webapp.json><link rel=icon href=favicon.ico type=image/x-icon><link rel=apple-touch-icon href=img/iphone_home120.png><link rel=apple-touch-icon sizes=120x120 href=img/iphone_home120.png><link rel=apple-touch-startup-image media="(device-width: 320px)" href=img/iphone_startup.png><meta name=apple-mobile-web-app-title content="Telegram Web"><meta name=mobile-web-app-capable content=yes><meta name=apple-mobile-web-app-capable content=yes><meta name=apple-mobile-web-app-status-bar-style content=black-translucent><meta name=theme-color content=#497495><meta name=google content=notranslate><meta property=og:title content="Telegram Web"><meta property=og:url content="https://web.telegram.org/"><meta property=og:image:width content=236><meta property=og:image:height content=236><meta property=og:image content=https://web.telegram.org/img/logo_share.png><meta property=og:site_name content="Telegram Web"><meta property=description content="Welcome to the Web application of Telegram messenger. See https://github.com/zhukov/webogram for more info."><meta property=og:description content="Welcome to the Web application of Telegram messenger. See https://github.com/zhukov/webogram for more info."></head><body><div class=page_wrap ng-view></div><div id=notify_sound></div><script src=js/app.js></script></body></html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $(document).ready(function(){
+    $( function() {
+   $( ".elektr, .iqruski, .ukr, .koncel" ).draggable();
+   $( ".palatka, .yeda, .obuv, .qiq, .obed, .odejd, .odejd, .spalnik, .aptecka, .jaket, .voda, .jaket, .dojdevik, .fonar" ).draggable();
+   $( ".sumk" ).droppable({
+     accept: ".elektr, .iqruski, .ukr, .koncel, .palatka, .yeda, .obuv, .qiq, .obed, .odejd, .odejd, .spalnik, .aptecka, .jaket, .voda, .jaket, .dojdevik, .fonar",
+     classes: {
+       "ui-droppable-active": "ui-state-active",
+       "ui-droppable-hover": "ui-state-hover"
+     },
+     drop: function( event, ui ) {
+       $(this)
+       .addClass( "ui-state-highlight" )
+       .find( "p" )
+         .html( "Dropped!" );
+     }
+   });
+
+ } );
+ $(".button3").click(function () {
+   if ($(".sumk").hasClass("ui-state-highlight")) {
+     alert ("В сумке что-то есть!");
+   } else {
+     alert ("В сумке ничего!");
+   }
+ });
+
+} );
+
+      </script>
+      <script>
+  // var =
+  // var =
+  // if (  ) {
+  //   alert ()
+  // }
+  //   else if ( )
+  //
+  // else
+        </script>
+</head>
+    <title>Турпоход в горы</title>
+    <style media="screen">
+      body {
+        /* width: 1440px; */
+        margin: 0 auto;
+        background:#ABD9CF;
+        min-height: 900px;
+        display: block;
+        position: relative;
+      }
+      #elektr, #iqruski, #ukr, #koncel, #palatka, #yeda, #obuv, #qiq, #obed, #odejd, #odejd, #spalnik, #aptecka, #jaket, #voda, #jaket, #dojdevik, #fonar {
+        width: 100px;
+        display: block;
+      }
+      #sumk {
+        /* height: 400px; */
+      }
+      .wrapper {
+        max-width: 1440px;
+        margin: 0 auto;
+        min-height: 900px;
+        display: block;
+        position: relative;
+      }
+      </style>
+      <body>
+        <div class="wrapper">
+
+        <img class="obl2" src="images/облако_2.svg" alt="">
+        <img class="obl3" src="images/облако_3.svg" alt="">
+        <img class="obl4" src="images/облако_4.svg" alt="">
+        <img class="obl5" src="images/облако_5.svg" alt="">
+        <img class="obl6" src="images/облако_6.svg" alt="">
+        <img class="qora2" src="images/гора_2.svg" alt="">
+
+        <div id="sumk"><p></p> <img class="sumk" src="images/sumka.svg" alt=""></div>
+        <div id="yeda"><img class="yeda" src="images/yeda.svg" alt=""></div>
+        <div id="obuv"><img class="obuv" src="images/obuv.svg" alt=""></div>
+        <div id="qiq"><img class="qiq" src="images/qiqiyen.svg" alt=""></div>
+        <div id="obed"><img class="obed" src="images/obed.svg" alt=""></div>
+        <div id="elektr"><img class="elektr" src="images/elektr.svg" alt=""></div>
+        <div id="odejd"><img class="odejd" src="images/odejd.svg" alt=""></div>
+        <div id="spalnik"><img class="spalnik" src="images/spalnik.svg" alt=""></div>
+        <div id="palatka"><img class="palatka" src="images/palatka.svg" alt=""></div>
+        <div id="fonar"><img class="fonar" src="images/fonar.svg" alt=""></div>
+        <div id="voda"><img class="voda" src="images/voda.svg" alt=""></div>
+        <div id="dojdevik"><img class="dojdevik" src="images/dojdevik.svg" alt=""></div>
+        <div id="aptecka"><img class="aptecka" src="images/aptecka.svg" alt=""></div>
+        <div id="jaket"><img class="jaket" src="images/jaket.svg" alt=""></div>
+        <div id="iqruski"><img class="iqruski" src="images/iqruski.svg" alt=""></div>
+        <div id="ukr"><img class="ukr" src="images/ukr.svg" alt=""></div>
+        <div id="koncel"><img class="koncel" src="images/koncel.svg" alt=""></div>
+        <a href="javascript:void(0)" class="button3">ПОЕХАЛИ!</a>
+
+      </div>
+
+      </body>
+
+      <header>
+      </header>
